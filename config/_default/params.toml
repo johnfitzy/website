@@ -11,13 +11,13 @@ autoSwitchAppearance = true
 
 enableA11y = false
 enableSearch = false
-enableCodeCopy = false
+enableCodeCopy = true
 enableStructuredBreadcrumbs = false
 # enableStyledScrollbar = true # disable to use native scrollbar style (defaults to true)
 
 replyByEmail = false
 
-# mainSections = ["section1", "section2"]
+mainSections = ["posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -58,9 +58,9 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   # homepageImage = "img/ocean.jpg" # used in: hero, and card
-  showRecent = false
+  showRecent = true
   showRecentItems = 5
-  showMoreLink = false
+  showMoreLink = true
   showMoreLinkDest = "/posts/"
   cardView = false
   cardViewScreenWidth = false
@@ -92,7 +92,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showTableOfContents = false
   # showRelatedContent = false
   # relatedContentLimit = 3
-  showTaxonomies = false # Enable the display of taxonomies for the related article.
+  showTaxonomies = true # Enable the display of taxonomies for the related article.
   showCategories = true # These will show if showTaxonomies is true.
   showTags = true # These will show if showTaxonomies is true.
   showCategoriesInSecondaryColor = false # This will change the color of category badges, so the user can better distinguish between the two. Only if showTaxonomies is true.
