@@ -203,6 +203,9 @@ SELECT hour, COUNT(DISTINCT hex) AS aircraft
 FROM aircraft
 GROUP BY hour
 ORDER BY hour DESC;
+
+-- Exit DuckDB
+.exit
 ```
 
 ## Disk use
