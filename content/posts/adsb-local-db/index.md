@@ -105,7 +105,7 @@ nc localhost 30047 | jq --unbuffered -c '.'
 You should see a bunch of JSON objects written to the terminal like the above example. If not, search in the [documentation](https://github.com/sdr-enthusiasts/docker-adsb-ultrafeeder) for how to enable this feature with flag `--net-json-port=`, or double check your Docker port settings. 
 
 ## Bento
-[Bento](https://warpstreamlabs.github.io/bento/) is an open source stream processing binary written in Go that makes common data engineering tasks very simple to implement. In-short it connects to a `source`, allows you to do `processing` in-between flushing the results out to an `output`. 
+[Bento](https://warpstreamlabs.github.io/bento/) is an open source stream processing binary written in Go that makes common data engineering tasks very simple to implement. In-short it connects to a `source`, allows you to do `processing` in-between flushing the results to an `output`. 
 
 Check out the [documentation](https://warpstreamlabs.github.io/bento/) for more info. 
 
@@ -178,7 +178,7 @@ duckdb ~/aircraft.duckdb
 CREATE VIEW aircraft AS
 SELECT * FROM read_parquet('/data/bento/aircraft/hour=*/part-*.parquet', hive_partitioning=true);
 ```
-Reconnecting later with duckdb ~/aircraft.duckdb will have the view ready to go.
+Reconnecting later with `duckdb ~/aircraft.duckdb` will have the view ready to go.
 
 ### Example queries
 ```bash
