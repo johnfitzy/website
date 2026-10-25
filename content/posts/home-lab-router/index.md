@@ -29,9 +29,9 @@ showPagination: true
 # Google will index YOUR site as the original source.
 ---
 
-This is the first in a series of posts on building a K3s Kubernetes home cluster from three old Lenovo ThinkCentre M910q mini PCs and a [MikroTik hEX S](https://mikrotik.com/product/hex_s) router. This post sets up the router and WireGuard to do two things:
-1) Isolate the K8s network from my home LAN
-2) Manage the router and connected hosts from my laptop without a cable
+This is the first in a series of posts on building a K3s Kubernetes home cluster from three old Lenovo ThinkCentre M910q mini PCs and a [MikroTik hEX S](https://mikrotik.com/product/hex_s) router. This post configures the router and WireGuard to achieve two main things:
+1) Create a network that is isolated from my home LAN for the Kubernetes hosts
+2) Manage the router and hosts from my laptop securely without a cable
 
 ### Network design
 The hEX sits on my home LAN like any other device, with its WAN port (ether1) at `192.168.1.7`. Behind it, the router runs a separate cluster LAN on `10.20.0.0/24`. The only way in from the home LAN is the WireGuard port, and only my laptop holds a key.
