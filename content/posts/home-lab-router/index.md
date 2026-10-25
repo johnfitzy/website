@@ -1,10 +1,12 @@
 ---
-title: "Network and VPN Config for Kubernetes Home Lab"
+title: "Network and VPN Config for Kubernetes Home cluster"
 date: 2026-10-25
 lastmod: 2026-10-25
 description: "Create an isolated network for a Kubernetes home cluster and set up VPN"
-tags: ["kubernetes", "Home Lab"]
+tags: ["kubernetes", "Home Cluster"]
 categories: ["Networking"]
+series: ["Kubernetes Home Cluster"]
+series_order: 1
 draft: false
 
 # --- Hero image ---
@@ -27,7 +29,7 @@ showPagination: true
 # Google will index YOUR site as the original source.
 ---
 
-This is the first in a series of posts on building a K3s Kubernetes home lab from three old Lenovo ThinkCentre M910q mini PCs and a [MikroTik hEX S](https://mikrotik.com/product/hex_s) router. This post sets up the router and WireGuard to do two things:
+This is the first in a series of posts on building a K3s Kubernetes home cluster from three old Lenovo ThinkCentre M910q mini PCs and a [MikroTik hEX S](https://mikrotik.com/product/hex_s) router. This post sets up the router and WireGuard to do two things:
 1) Isolate the K8s network from my home LAN
 2) Manage the router and connected hosts from my laptop without a cable
 
